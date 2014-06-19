@@ -14,7 +14,7 @@ public class CompressionDriver {
 		while(fileScan.hasNext())
 			textToEncode.append(fileScan.nextLine().toLowerCase()+"\n");
 		
-		HuffmanEndcoding encode = new HuffmanEndcoding(textToEncode.toString());
+		HuffmanEncoding encode = new HuffmanEndcoding(textToEncode.toString());
 		encode.compression();
 	}
 
